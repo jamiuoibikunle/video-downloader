@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Download videos from your favourite social media</title>
+        <link rel="stylesheet" href="/styles/styles.css" />
+    </head>
+    <body class="bg-slate-100 py-5 px-5 md:px-10">
+        <%- include("../partials/header.ejs") %>
+        <section
+            class="my-10 mx-auto flex gap-10 flex-wrap md:flex-nowrap p-5 justify-between items-center max-w-5xl"
+        >
+            <aside class="max-w-lg">
+                <h2 class="text-3xl font-semibold">
+                    Your Favourite Video Downloader
+                </h2>
+                <div class="text-slate-700 text-xl my-5">
+                    Download video clips from your favourite social media in two
+                    easy steps without the frustration of advertisements. Paste
+                    the URL to the video and
+                    <span class="text-indigo-500 underline">VOOM!</span>
+                </div>
+                <div
+                    class="bg-indigo-500 text-white md:mx-auto w-fit py-2 px-4 rounded-md border-slate-500 border-solid"
+                >
+                    <a href="/download">Start downloading</a>
+                </div>
+            </aside>
+            <aside class="h-sm w-sm">
+                <img src="/images/download-svg.svg" alt="Download image" />
+            </aside>
+        </section>
+    </body>
+</html>
